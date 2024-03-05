@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --color-primary: rgb(11, 0, 22);
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-white: #fff;
+    --color-dark-variant: #677483;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow: hidden;
+    background: #E5E7E6;
+
+}
+
+.container {
+    display: grid;
+    width: 80vw;
+    height: 90vh;
+    margin: 2rem auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+    border-radius: 20px;
+    background: white;
+}
+
+aside{
+    height: 90vh;
+    background: white;
+    border-radius: 20px;
+}
+
+aside .top{
+    background: white;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+
+}
+
+aside .close {
+    display: none;
+}
+
+
+aside h2 {
+    font-size: 1rem;
+}
+
+aside .logo {
+    display: flex;
+    gap: 0.8rem;
+
+}
+
+
+aside .logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: 14px;
+
+}
