@@ -12,6 +12,10 @@
     --color-warning: #ffbb55;
     --color-background: #f6f6f9;
 
+    --color-gray: gray;
+
+    --color-border:  rgb(170, 170, 170);
+
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -53,7 +57,7 @@ body {
     display: grid;
     width: 80vw;
     height: 90vh;
-    margin: 2rem auto;
+    margin: 40px auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto;
     border-radius: 20px;
@@ -62,8 +66,9 @@ body {
 
 aside{
     height: 90vh;
-    background: white;
     border-radius: 20px;
+    border: 1px solid var(--color-border);
+    
 }
 
 aside .top{
@@ -75,26 +80,136 @@ aside .top{
 
 }
 
+
 aside .close {
     display: none;
 }
 
 
 aside h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-top: 7px;
 }
+
+
+aside span{
+    font-size: 0.4rem;
+    margin: 0 0;
+}
+
 
 aside .logo {
     display: flex;
-    gap: 0.8rem;
+
+}
+
+aside .logo .profile-logo{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: 50px;
+
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+
+
+}
+
+aside .logo .company-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 20%;
+    margin-left: 14px;
+    margin-right: 5px;
+
+}
+
+aside .sidebar{
+    margin-top: 1rem;
+}
+
+.sidebar .billing button.add-billing{
+    /* border-radius: 2px; */
+    background: var(--color-gray);
+    color: white;
+    width: 50px;
+    height: 15px;
+    font-size: 0.6rem;
+
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
 
 }
 
 
-aside .logo img {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    margin-left: 14px;
 
+aside .sidebar .team-amount{
+
+    border-radius: 2px;
+    border: 1px solid var(--color-border);
+    background: rgb(228, 228, 228);
+    color: black;
+    width: 20px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+
+
+}
+
+
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: var(--color-dark);
+    margin: 5px 15px;
+    gap: 5px;
+    position: relative;
+
+    border-radius: 4px;
+    border: 1px solid #E5E7E6;
+
+    width: 90%;
+    transition: all 300ms ease;
+    font-size: 0.8rem;
+
+}
+
+aside .folders-title{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+aside .folders-title span{
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+
+
+aside a.invites{
+    margin-top: 18rem;
+
+}
+
+
+aside a.folders{
+    /* background: red; */
+    display: flex;
+    
+}
+
+.dropdown-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
 }

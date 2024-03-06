@@ -8,11 +8,13 @@ const Dashboard = () => {
         <div className="container">
 
             {/* Aside Part starts from here  */}
+
             <aside>
                 <div className="top">
                     <div className="logo">
                         <img src={LogoMain} alt="" className="company-logo" />
                         <div className="logo-text">
+                            {/* <span className="company-inc">INC</span> */}
                             <h2>InnovateHub</h2>
                         </div>
                         <img src={ProfilePic} alt="" className="profile-logo" />
@@ -22,7 +24,135 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="sidebar">
+
+
+
+                    <a href="#design">
+                        <i class="uil uil-edit sidebar-icons"></i>
+                        Design Team
+                        <span className="team-amount">x+1</span>
+                    </a>
+
+
+
+
+                    <a href="#marketing">
+                        <i class="uil uil-megaphone sidebar-icons"></i>
+                        Marketing Team
+                        <span className="team-amount">x+2</span>
+                    </a>
+
+
+
+
+                    <a href="#development">
+                        <i class="uil uil-brackets-curly sidebar-icons"></i>
+                        Development Team
+                        <span className="team-amount">x+3</span>
+                    </a>
+
+
+
+
+                    <a href="#createteam">
+                        <i class="uil uil-focus-add sidebar-icons"></i>
+                        Create a team
+                    </a>
+
+
+                    <div className="folders-title">
+                        <span className='folders-span'>FOLDERS</span>
+                        <i class="uil uil-plus folder-plus"></i>
+                    </div>
+
+
+                    <a className='folders' href="#products">
+                        <i class="uil uil-folder sidebar-icons"></i>
+                        Products
+                        <i class="uil uil-angle-down dropdown-icon"></i>
+                    </a>
+
+
+
+
+                    <a className='folders' href="#sales">
+                        <i class="uil uil-folder sidebar-icons"></i>
+                        Sales
+                        <i class="uil uil-angle-down dropdown-icon"></i>
+                    </a>
+
+
+
+
+
+                    <a className='folders' href="#design">
+                        <i class="uil uil-folder sidebar-icons"></i>
+                        Design
+                        <i class="uil uil-angle-down dropdown-icon"></i>
+                    </a>
+
+
+
+
+                    <a className='folders' href="#office">
+                        <i class="uil uil-folder sidebar-icons"></i>
+                        Office
+                        <i class="uil uil-angle-down dropdown-icon"></i>
+                    </a>
+
+
+
+
+
+                    <a className='folders' href="#legal">
+                        <i class="uil uil-folder sidebar-icons"></i>
+                        Legal
+                        <i class="uil uil-angle-down dropdown-icon"></i>
+                    </a>
+
+
+
+
+
+                    <a href="#invites" className='invites'>
+                        <i class="uil uil-user-plus sidebar-icons"></i>
+                        Invite teammates
+                    </a>
+
+
+
+
+                    <a href="#design">
+                        <i class="uil uil-question-circle sidebar-icons"></i>
+                        Help and first steps
+                    </a>
+
+
+
+
+                    <a href="#design" className='billing'>
+                        <div className="days-left">
+                            7
+                        </div>
+                        days left on trial
+                        <button className="add-billing">
+                            Add billing
+                        </button>
+                    </a>
+
+
+
+
+                </div>
             </aside>
+
+
+
+
+
+
         </div>
     )
 }
