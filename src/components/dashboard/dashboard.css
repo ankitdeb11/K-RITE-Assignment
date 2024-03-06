@@ -129,7 +129,6 @@ aside .sidebar{
 }
 
 .sidebar .billing button.add-billing{
-    /* border-radius: 2px; */
     background: var(--color-gray);
     color: white;
     width: 50px;
@@ -138,6 +137,8 @@ aside .sidebar{
 
     border-radius: 4px;
     border: 1px solid var(--color-border);
+
+    cursor: pointer;
 
 }
 

@@ -3,6 +3,7 @@ import './dashboard.css';
 import LogoMain from "../../assets/logos/logo_main.jpg";
 import ProfilePic from "../../assets/logos/profile_logo.jpg";
 
+
 const Dashboard = () => {
     return (
         <div className="container">
@@ -124,7 +125,7 @@ const Dashboard = () => {
 
 
 
-                    <a href="#design">
+                    <a href="#help">
                         <i class="uil uil-question-circle sidebar-icons"></i>
                         Help and first steps
                     </a>
@@ -132,7 +133,7 @@ const Dashboard = () => {
 
 
 
-                    <a href="#design" className='billing'>
+                    <a href="#billing" className='billing'>
                         <div className="days-left">
                             7
                         </div>
