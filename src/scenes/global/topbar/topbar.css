@@ -1,13 +1,13 @@
 .topbar-container{
     width: 64vw;
     height: 12vh;
-    /* margin-top: 20px; */
 
-    /* border-radius: 20px;
-    border: 1px solid var(--color-border); */
 
 }
 
+.top-page-name{
+    font-size: 1rem;
+}
 
 
 .top-start{
@@ -39,9 +39,14 @@
     border: 1px solid var(--color-border);
     padding: 2px 10px;
     margin: 0 5px;
-
     color: black;
 
+    transition: all .3s ease;
+
+}
+
+.top-icons:hover{
+    background: rgb(238, 238, 238);
 }
 
 .topbar-container i{

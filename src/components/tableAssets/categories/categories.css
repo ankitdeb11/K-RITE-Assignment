@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+.category-container {
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+
+    font-family: 'Poppins', sans-serif;
+
+    width: auto;
+    height: 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.automation-category {
+    background: rgb(244, 234, 255);
+}
+
+.category-container p {
+    margin: 1px 3px;
+    font-size: 0.6rem;
+}
+
+.ecommerce-category {
+    background: rgb(255, 244, 223);
+}
+
+.category-container p.ecommerce {
+    color: rgb(255, 166, 0);
+
+}
+
+
+.mobile-category {
+    background: rgb(255, 255, 199);
+}
+
+.category-container p.mobile {
+    color: rgb(133, 133, 0);
+
+}
+
+.marketplace-category{
+    background: rgb(243, 252, 243);
+}
+
+.category-container p.marketplace {
+    color: rgb(0, 50, 0);
+
+}
+
+.category-container p.automation {
+    color: rgb(36, 0, 71);
+
+}
+
+.b2b-category{
+    background: rgb(255, 238, 232);
+}
+
+.category-container p.b2b {
+    color: orangered;
+
+}
+
+.technology-category{
+    background: rgb(221, 221, 255);
+}
+
+.category-container p.technology {
+    color: rgb(0, 0, 86);
+
+}

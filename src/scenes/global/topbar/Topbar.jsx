@@ -4,7 +4,6 @@ import './topbar.css';
 const Topbar = ({title}) => {
     return (
         <div className="topbar-container">
-
             <div className="top-start">
                 <div className="top-page-name">
                     {title}

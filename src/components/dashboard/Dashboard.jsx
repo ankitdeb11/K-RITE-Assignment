@@ -2,8 +2,8 @@ import React from 'react';
 import './dashboard.css';
 import LogoMain from "../../assets/logos/logo_main.jpg";
 import ProfilePic from "../../assets/logos/profile_logo.jpg";
-import Topbar from '../../scenes/global/topbar/Topbar';
 import Products from '../../scenes/folders/products/Products';
+import TableActions from '../tableActions/TableActions';
 
 
 const Dashboard = () => {
@@ -161,8 +161,9 @@ const Dashboard = () => {
 
 
             <main className="content">
-                {/* <Topbar /> */}
                 <Products />
+
+                <TableActions />
                 
             </main>
 
