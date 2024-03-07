@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './dashboard.css';
 import LogoMain from "../../assets/logos/logo_main.jpg";
 import ProfilePic from "../../assets/logos/profile_logo.jpg";
@@ -7,6 +7,16 @@ import TableActions from '../tableActions/TableActions';
 
 
 const Dashboard = () => {
+
+
+    const [isDropDownOpen, setDropDownOpen] = useState(false);
+
+    const toggleDropDown = () => {
+        setDropDownOpen(!isDropDownOpen);
+    }
+
+
+
     return (
         <div className="container">
 
@@ -94,16 +104,16 @@ const Dashboard = () => {
 
 
                         <div className="item">
-                            <a href="#products">
+                            <a href="#products" onClick={toggleDropDown}>
                                 <i class="uil uil-folder sidebar-icons"></i>
                                 Products
-                                <i class="uil uil-angle-down dropdown-icon"></i>
+                                <i className={`uil uil-angle-${isDropDownOpen ? 'up' : 'down'} dropdown-icon`}></i>
                             </a>
 
                             {/* Drop down menu items 01 */}
 
                             {/* Sub Menu Starts from here  */}
-                            <div className="sub-menu">
+                            <div className={`sub-menu ${isDropDownOpen ? 'open' : 'closed'}`}>
 
                                 <a href="#roadmap" className="sub-item">
                                     <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
@@ -111,22 +121,22 @@ const Dashboard = () => {
                                 </a>
 
                                 <a href="#feedback" className="sub-item">
-                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
                                     Feedback
                                 </a>
 
                                 <a href="#Performance" className="sub-item">
-                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
                                     Performance
                                 </a>
 
                                 <a href="#team" className="sub-item">
-                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
                                     Team
                                 </a>
 
                                 <a href="#analytics" className="sub-item">
-                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
                                     Analytics
                                 </a>
 
@@ -177,36 +187,40 @@ const Dashboard = () => {
 
                         </div>
 
+                        <div className="essentials">
 
-                        <div className="item teams">
-                            <a href="#invites" className='invites'>
-                                <i class="uil uil-user-plus sidebar-icons"></i>
-                                Invite teammates
-                            </a>
+                            <div className="item teams">
+                                <a href="#invites" className='invites'>
+                                    <i class="uil uil-user-plus sidebar-icons"></i>
+                                    Invite teammates
+                                </a>
+                            </div>
+
+
+                            <div className="item">
+                                <a href="#help">
+                                    <i class="uil uil-question-circle sidebar-icons"></i>
+                                    Help and first steps
+                                </a>
+
+                            </div>
+
+                            <div className="item">
+                                <a href="#billing" className='billing'>
+                                    <div className="days-left">
+                                        7
+                                    </div>
+                                    days left on trial
+                                    <button className="add-billing">
+                                        Add billing
+                                    </button>
+                                </a>
+
+
+                            </div>
                         </div>
 
 
-                        <div className="item">
-                            <a href="#help">
-                                <i class="uil uil-question-circle sidebar-icons"></i>
-                                Help and first steps
-                            </a>
-
-                        </div>
-
-                        <div className="item">
-                            <a href="#billing" className='billing'>
-                                <div className="days-left">
-                                    7
-                                </div>
-                                days left on trial
-                                <button className="add-billing">
-                                    Add billing
-                                </button>
-                            </a>
-
-
-                        </div>
 
                     </div>
 

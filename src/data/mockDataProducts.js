@@ -23,7 +23,7 @@ export const mockDataProducts = [
         description: "Develop a mobile app",
         membersCount: 2,
         categories: "Mobile",
-        tags: "#Technovation",
+        tags: "#TechInnovation",
         nextMeetingETA: "Tomorrow",
     },
     {

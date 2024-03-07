@@ -15,6 +15,12 @@ import MobileCategory from '../../../components/tableAssets/categories/MobileCat
 import MarketplaceCategory from '../../../components/tableAssets/categories/MarketplaceCategory';
 import B2BCategory from '../../../components/tableAssets/categories/B2BCategory';
 import TechnologyCategory from '../../../components/tableAssets/categories/TechnologyCategory';
+import DigitalTransformation from '../../../components/tableAssets/tags/DigitalTransformation';
+import OnlineShopping from '../../../components/tableAssets/tags/OnlineShopping';
+import TechInnovation from '../../../components/tableAssets/tags/TechInnovation';
+import BuySellOnline from '../../../components/tableAssets/tags/BuySellOnline';
+import BusinessPartnerships from '../../../components/tableAssets/tags/BusinessPartnerships';
+import SmartFinance from '../../../components/tableAssets/tags/SmartFinance';
 
 
 
@@ -74,7 +80,19 @@ const Products = () => {
             field: "tags",
             headerName: "Tags",
             flex: 0.5,
-            cellClassName: "tags-column--cell"
+            cellClassName: "tags-column--cell",
+            renderCell: ({ row: { tags } }) => {
+                return (
+                    <div className="tags-container">
+                        {tags === "#DigitalTransformation" && <DigitalTransformation />}
+                        {tags === "#OnlineShopping" && <OnlineShopping />}
+                        {tags === "#TechInnovation" && <TechInnovation /> }
+                        {tags === "#BuySellOnline" && <BuySellOnline />}
+                        {tags === "#BusinessPartnerships" && <BusinessPartnerships />}
+                        {tags === "#SmartFinance" && <SmartFinance />}
+                    </div>
+                )
+            }
         },
         {
             field: "nextMeetingETA",
@@ -102,7 +120,7 @@ const Products = () => {
                         border: "none",
                     },
                     "& .MuiDataGrid-footerContainer": {
-                       border: "none"
+                        border: "none"
 
                     },
                 }}

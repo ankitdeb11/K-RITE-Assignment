@@ -14,7 +14,7 @@
 
     --color-gray: gray;
 
-    --color-border:  rgb(170, 170, 170);
+    --color-border: rgb(170, 170, 170);
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -64,14 +64,14 @@ body {
     background: white;
 }
 
-aside{
+aside {
     height: 90vh;
     border-radius: 20px;
     border: 1px solid var(--color-border);
-    
+
 }
 
-aside .top{
+aside .top {
     background: white;
     display: grid;
     align-items: center;
@@ -92,7 +92,7 @@ aside h2 {
 }
 
 
-aside span{
+aside span {
     font-size: 0.4rem;
     margin: 0 0;
 }
@@ -103,7 +103,7 @@ aside .logo {
 
 }
 
-aside .logo .profile-logo{
+aside .logo .profile-logo {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -124,11 +124,11 @@ aside .logo .company-logo {
 
 }
 
-aside .sidebar{
+aside .sidebar {
     margin-top: 1rem;
 }
 
-.sidebar .billing button.add-billing{
+.sidebar .billing button.add-billing {
     background: var(--color-gray);
     color: white;
     width: 50px;
@@ -144,7 +144,7 @@ aside .sidebar{
 
 
 
-aside .sidebar .team-amount{
+aside .sidebar .team-amount {
 
     border-radius: 2px;
     border: 1px solid var(--color-border);
@@ -165,22 +165,22 @@ aside .sidebar .team-amount{
 }
 
 
-aside .sidebar .menu{
+aside .sidebar .menu {
     display: inline-block;
     width: 100%;
     margin-top: 5px;
 }
 
-aside .sidebar .menu .item{
+aside .sidebar .menu .item {
     position: relative;
     cursor: pointer;
 
     border-radius: 4px;
     border: 1px solid #E5E7E6;
-    padding: 0  5px;
+    padding: 0 5px;
 }
 
-.menu .item a{
+.menu .item a {
     width: 90%;
     display: flex;
     align-items: center;
@@ -190,7 +190,7 @@ aside .sidebar .menu .item{
     font-size: var(--theme-font-size);
 }
 
-.folders-title{
+.folders-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,31 +198,50 @@ aside .sidebar .menu .item{
     padding: 0 10px;
 }
 
-.folders-title span{
+.folders-title span {
     font-size: var(--theme-font-size);
     margin-left: 2px;
 }
 
 
 
-.dropdown-icon{
+.dropdown-icon {
     position: absolute;
     right: 0;
     margin-right: 10px;
     transition: 0.3s ease;
 }
 
-.teams{
-    margin-top: 12rem;
-}
 
-.item .sub-menu{
+
+.item .sub-menu {
     padding: 0 22px;
     justify-content: space-between;
 
-    /* display: none; */
+    transition: max-height 0.5s ease-in-out;
+
+  
+
+    display: none;
 }
 
-.sub-item-icon{
+.sub-menu.open {
+    display: block;
+    max-height: 1000px; /* Set a large enough value */
+}
+
+.sub-menu.closed {
+    max-height: 0;
+}
+.sub-item-icon {
     color: rgb(193, 193, 193);
+}
+
+
+
+
+
+.essentials{
+    position: absolute;
+    bottom: 50px;
 }

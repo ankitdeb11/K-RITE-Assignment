@@ -25,7 +25,7 @@
 
 .category-container p {
     margin: 1px 3px;
-    font-size: 0.6rem;
+    font-size: var(--table-data-font-size);
 }
 
 .ecommerce-category {
