@@ -29,133 +29,192 @@ const Dashboard = () => {
 
                 <div className="sidebar">
 
+                    {/* Menu Items start from here  */}
 
 
-                    <a href="#design">
-                        <i class="uil uil-edit sidebar-icons"></i>
-                        Design Team
-                        <span className="team-amount">x+1</span>
-                    </a>
-
-
-
-
-                    <a href="#marketing">
-                        <i class="uil uil-megaphone sidebar-icons"></i>
-                        Marketing Team
-                        <span className="team-amount">x+2</span>
-                    </a>
-
-
-
-
-                    <a href="#development">
-                        <i class="uil uil-brackets-curly sidebar-icons"></i>
-                        Development Team
-                        <span className="team-amount">x+3</span>
-                    </a>
-
-
-
-
-                    <a href="#createteam">
-                        <i class="uil uil-focus-add sidebar-icons"></i>
-                        Create a team
-                    </a>
-
-
-                    <a className='home' href="#home">
-                        <i class="uil uil-create-dashboard"></i>
-                        Dashboard Main
-                    </a>
-
-
-
-                    <div className="folders-title">
-                        <span className='folders-span'>FOLDERS</span>
-                        <i class="uil uil-plus folder-plus"></i>
-                    </div>
-
-              
-
-
-                    <a className='folders' href="#products">
-                        <i class="uil uil-folder sidebar-icons"></i>
-                        Products
-                        <i class="uil uil-angle-down dropdown-icon"></i>
-                    </a>
-
-
-
-
-                    <a className='folders' href="#sales">
-                        <i class="uil uil-folder sidebar-icons"></i>
-                        Sales
-                        <i class="uil uil-angle-down dropdown-icon"></i>
-                    </a>
-
-
-
-
-
-                    <a className='folders' href="#design">
-                        <i class="uil uil-folder sidebar-icons"></i>
-                        Design
-                        <i class="uil uil-angle-down dropdown-icon"></i>
-                    </a>
-
-
-
-
-                    <a className='folders' href="#office">
-                        <i class="uil uil-folder sidebar-icons"></i>
-                        Office
-                        <i class="uil uil-angle-down dropdown-icon"></i>
-                    </a>
-
-
-
-
-
-                    <a className='folders' href="#legal">
-                        <i class="uil uil-folder sidebar-icons"></i>
-                        Legal
-                        <i class="uil uil-angle-down dropdown-icon"></i>
-                    </a>
-
-              
-
-
-                    <a href="#invites" className='invites'>
-                        <i class="uil uil-user-plus sidebar-icons"></i>
-                        Invite teammates
-                    </a>
-
-
-
-
-                    <a href="#help">
-                        <i class="uil uil-question-circle sidebar-icons"></i>
-                        Help and first steps
-                    </a>
-
-
-
-
-                    <a href="#billing" className='billing'>
-                        <div className="days-left">
-                            7
+                    <div className="menu">
+                        <div className="item">
+                            <a href="#design">
+                                <i class="uil uil-edit sidebar-icons"></i>
+                                Design Team
+                                <span className="team-amount">x+1</span>
+                            </a>
                         </div>
-                        days left on trial
-                        <button className="add-billing">
-                            Add billing
-                        </button>
-                    </a>
 
 
+                        <div className="item">
+                            <a href="#marketing">
+                                <i class="uil uil-megaphone sidebar-icons"></i>
+                                Marketing Team
+                                <span className="team-amount">x+2</span>
+                            </a>
+
+
+                        </div>
+
+
+                        <div className="item">
+                            <a href="#development">
+                                <i class="uil uil-brackets-curly sidebar-icons"></i>
+                                Development Team
+                                <span className="team-amount">x+3</span>
+                            </a>
+
+
+                        </div>
+
+
+
+
+                        <div className="item">
+                            <a href="#createteam">
+                                <i class="uil uil-focus-add sidebar-icons"></i>
+                                Create a team
+                            </a>
+
+                        </div>
+
+
+                        {/* 
+                        <div className="item">
+                            <a className='home' href="#home">
+                                <i class="uil uil-create-dashboard"></i>
+                                Dashboard Main
+                            </a>
+
+
+                        </div> */}
+
+
+
+                        <div className="folders-title">
+                            <span className='folders-span'>FOLDERS</span>
+                            <i class="uil uil-plus folder-plus"></i>
+                        </div>
+
+
+                        <div className="item">
+                            <a href="#products">
+                                <i class="uil uil-folder sidebar-icons"></i>
+                                Products
+                                <i class="uil uil-angle-down dropdown-icon"></i>
+                            </a>
+
+                            {/* Drop down menu items 01 */}
+
+                            {/* Sub Menu Starts from here  */}
+                            <div className="sub-menu">
+
+                                <a href="#roadmap" className="sub-item">
+                                    <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    Roadmap
+                                </a>
+
+                                <a href="#feedback" className="sub-item">
+                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    Feedback
+                                </a>
+
+                                <a href="#Performance" className="sub-item">
+                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    Performance
+                                </a>
+
+                                <a href="#team" className="sub-item">
+                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    Team
+                                </a>
+
+                                <a href="#analytics" className="sub-item">
+                                <i class="uil uil-grip-horizontal-line sub-item-icon"></i>
+                                    Analytics
+                                </a>
+
+                                <a href="#addNew" className="sub-item">
+                                    <i class="uil uil-plus"></i>
+                                    Add new sub
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div className="item">
+                            <a className='folders' href="#sales">
+                                <i class="uil uil-folder sidebar-icons"></i>
+                                Sales
+                                <i class="uil uil-angle-down dropdown-icon"></i>
+                            </a>
+
+
+                        </div>
+
+                        <div className="item">
+                            <a className='folders' href="#design">
+                                <i class="uil uil-folder sidebar-icons"></i>
+                                Design
+                                <i class="uil uil-angle-down dropdown-icon"></i>
+                            </a>
+
+
+                        </div>
+
+                        <div className="item">
+                            <a className='folders' href="#office">
+                                <i class="uil uil-folder sidebar-icons"></i>
+                                Office
+                                <i class="uil uil-angle-down dropdown-icon"></i>
+                            </a>
+                        </div>
+
+                        <div className="item">
+                            <a className='folders legal' href="#legal">
+                                <i class="uil uil-folder sidebar-icons"></i>
+                                Legal
+                                <i class="uil uil-angle-down dropdown-icon"></i>
+                            </a>
+
+
+                        </div>
+
+
+                        <div className="item teams">
+                            <a href="#invites" className='invites'>
+                                <i class="uil uil-user-plus sidebar-icons"></i>
+                                Invite teammates
+                            </a>
+                        </div>
+
+
+                        <div className="item">
+                            <a href="#help">
+                                <i class="uil uil-question-circle sidebar-icons"></i>
+                                Help and first steps
+                            </a>
+
+                        </div>
+
+                        <div className="item">
+                            <a href="#billing" className='billing'>
+                                <div className="days-left">
+                                    7
+                                </div>
+                                days left on trial
+                                <button className="add-billing">
+                                    Add billing
+                                </button>
+                            </a>
+
+
+                        </div>
+
+                    </div>
 
 
                 </div>
+
+
+
             </aside>
 
 
@@ -164,11 +223,11 @@ const Dashboard = () => {
                 <Products />
 
                 <TableActions />
-                
+
             </main>
 
 
-          
+
 
 
 
