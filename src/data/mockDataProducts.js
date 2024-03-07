@@ -6,7 +6,7 @@ export const mockDataProducts = [
         membersCount: 5,
         categories: "Automation",
         tags: "#DigitalTransformation",
-        nextMeetingETA: "in X minutes",
+        nextMeetingETA: "in 30 minutes",
     },
     {
         id: 2,
