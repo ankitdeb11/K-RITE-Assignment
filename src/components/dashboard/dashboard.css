@@ -198,19 +198,21 @@ aside .folders-title span{
 
 
 aside a.invites{
-    margin-top: 18rem;
+    margin-top: 16rem;
 
 }
 
 
 aside a.folders{
-    /* background: red; */
     display: flex;
-    
 }
 
 .dropdown-icon{
     position: absolute;
     right: 0;
     margin-right: 10px;
+}
+
+.sidebar a.home{
+    margin-top: 1.5rem;
 }

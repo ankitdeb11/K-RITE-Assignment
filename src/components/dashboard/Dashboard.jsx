@@ -2,6 +2,8 @@ import React from 'react';
 import './dashboard.css';
 import LogoMain from "../../assets/logos/logo_main.jpg";
 import ProfilePic from "../../assets/logos/profile_logo.jpg";
+import Topbar from '../../scenes/global/topbar/Topbar';
+import Products from '../../scenes/folders/products/Products';
 
 
 const Dashboard = () => {
@@ -15,7 +17,6 @@ const Dashboard = () => {
                     <div className="logo">
                         <img src={LogoMain} alt="" className="company-logo" />
                         <div className="logo-text">
-                            {/* <span className="company-inc">INC</span> */}
                             <h2>InnovateHub</h2>
                         </div>
                         <img src={ProfilePic} alt="" className="profile-logo" />
@@ -63,10 +64,19 @@ const Dashboard = () => {
                     </a>
 
 
+                    <a className='home' href="#home">
+                        <i class="uil uil-create-dashboard"></i>
+                        Dashboard Main
+                    </a>
+
+
+
                     <div className="folders-title">
                         <span className='folders-span'>FOLDERS</span>
                         <i class="uil uil-plus folder-plus"></i>
                     </div>
+
+              
 
 
                     <a className='folders' href="#products">
@@ -113,8 +123,7 @@ const Dashboard = () => {
                         <i class="uil uil-angle-down dropdown-icon"></i>
                     </a>
 
-
-
+              
 
 
                     <a href="#invites" className='invites'>
@@ -148,6 +157,17 @@ const Dashboard = () => {
 
                 </div>
             </aside>
+
+
+
+            <main className="content">
+                {/* <Topbar /> */}
+                <Products />
+                
+            </main>
+
+
+          
 
 
 
