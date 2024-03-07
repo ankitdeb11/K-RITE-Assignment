@@ -9,8 +9,10 @@ import TableActions from '../tableActions/TableActions';
 const Dashboard = () => {
 
 
+    //using useState hook to toggle between the sub-menu items and menu-items.
     const [isDropDownOpen, setDropDownOpen] = useState(false);
 
+    
     const toggleDropDown = () => {
         setDropDownOpen(!isDropDownOpen);
     }
@@ -20,7 +22,7 @@ const Dashboard = () => {
     return (
         <div className="container">
 
-            {/* Aside Part starts from here  */}
+            {/* Aside Part for the Sidebar of the Dashboard starts from here  */}
 
             <aside>
                 <div className="top">
@@ -84,16 +86,6 @@ const Dashboard = () => {
 
                         </div>
 
-
-                        {/* 
-                        <div className="item">
-                            <a className='home' href="#home">
-                                <i class="uil uil-create-dashboard"></i>
-                                Dashboard Main
-                            </a>
-
-
-                        </div> */}
 
 
 
@@ -234,8 +226,12 @@ const Dashboard = () => {
 
 
             <main className="content">
+
+                {/* implemented one page of the Project for oe of the elements from the Sidebar of Dashboard */}
+
                 <Products />
 
+                {/* table actions refer to the actions that can be implmented to the structure of the contents of the table  */}
                 <TableActions />
 
             </main>

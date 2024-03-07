@@ -97,7 +97,8 @@ const Products = () => {
         {
             field: "nextMeetingETA",
             headerName: "Next meeting",
-            cellClassName: "meeting-column--cell"
+            cellClassName: "meeting-column--cell",
+            
         },
 
     ]
